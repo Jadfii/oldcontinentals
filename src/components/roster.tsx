@@ -91,7 +91,7 @@ export const Roster = ({ players, image }: { players: Player[]; image?: boolean 
         >
           <div style={{ display: 'flex' }}>
             <img
-              src={'https://i.imgur.com/dvS7QZl.png'}
+              src={'https://i.imgur.com/WAIq9dF.png'}
               width={400}
               height={337}
               alt="logo"
