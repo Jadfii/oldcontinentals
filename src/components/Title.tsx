@@ -1,4 +1,7 @@
 import { HTMLProps, PropsWithChildren } from 'react';
+import { Iceland } from 'next/font/google';
+
+const font = Iceland({ subsets: ['latin'], weight: '400' });
 
 export const Title = ({
   children,
@@ -8,13 +11,13 @@ export const Title = ({
   return (
     <h1
       {...rest}
+      className={font.className}
       style={{
-        fontSize: 42,
+        fontSize: 36,
         textTransform: 'uppercase',
         color: '#fff',
         letterSpacing: 8,
-        fontWeight: 'bold',
-        fontFamily: '"Karla Bold", inherit, sans-serif',
+        fontFamily: '"Iceland", inherit, sans-serif',
         ...style,
       }}
     >

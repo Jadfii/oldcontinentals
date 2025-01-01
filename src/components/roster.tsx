@@ -87,6 +87,7 @@ export const Roster = ({ players, image }: { players: Player[]; image?: boolean 
             flexDirection: 'column',
             height: '100%',
             flexShrink: 0,
+            gap: 32,
           }}
         >
           <div style={{ display: 'flex' }}>
