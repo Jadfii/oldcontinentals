@@ -38,6 +38,9 @@ export async function GET() {
           style: 'normal',
         },
       ],
+      headers: {
+        'cache-control': 'no-cache, no-store, must-revalidate',
+      },
     });
   } catch (err) {
     console.error('Error: ', err);
